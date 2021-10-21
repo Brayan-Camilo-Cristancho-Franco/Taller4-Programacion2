@@ -1,5 +1,6 @@
-package services;
-
+import Model.dtos.Owner;
+import services.OwnersService;
+import services.UsersService;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,7 +10,7 @@ public class Main {
 
     // JDBC driver name and database URL
     static final String JDBC_DRIVER = "org.postgresql.Driver";
-    static final String DB_URL = "jdbc:postgresql://localhost/fourpaws";
+    static final String DB_URL = "jdbc:postgresql://localhost/Pets";
 
     // Database credentials
     static final String USER = "postgres";
@@ -30,16 +31,16 @@ public class Main {
             conn = DriverManager.getConnection(DB_URL, USER, PASS);
 
             UsersService usersService = new UsersService(conn);
-            usersService.listUsers();
+            usersService.listUsers("owner");
 
-            PetsService petsService = new PetsService(conn);
+           /* PetsService petsService = new PetsService(conn);
             petsService.countBySpecies("dog");
 
             OwnersService ownersService = new OwnersService(conn);
-            ownersService.updateOwner(new Owner(6698, null, "Pepito Perez"));
+           // ownersService.updateOwner(new Owner("PEPE", "52", "Pepito Perez","calle 55","solo bosa"));
 
             // Closing database connection
-            conn.close();
+            conn.close();*/
 
         } catch(SQLException se) {
             se.printStackTrace(); // Handling errors from database
