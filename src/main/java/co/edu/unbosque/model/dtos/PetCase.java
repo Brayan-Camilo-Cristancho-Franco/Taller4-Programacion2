@@ -7,8 +7,8 @@ public class PetCase {
     private String description;
     private String pet_id;
 
-    public PetCase(String case_id, String created_at, String type, String description, String pet_id) {
-        this.case_id = case_id;
+    public PetCase(String created_at, String type, String description, String pet_id) {
+
         this.created_at = created_at;
         this.type = type;
         this.description = description;
