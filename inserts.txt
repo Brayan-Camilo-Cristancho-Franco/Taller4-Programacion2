@@ -1,0 +1,89 @@
+INSERT INTO UserApp (username,password,email,rol) VALUES ('Usuario1','usu1abc','usuario1abc@gmail.com','owner'); 
+
+
+INSERT INTO UserApp (username,password,email,rol) VALUES ('Usuario2','usu2abc','usuario2abc@gmail.com','official'); 
+
+
+INSERT INTO UserApp (username,password,email,rol) VALUES ('Usuario3','usu3abc','usuario3abc@gmail.com','vet'); 
+
+
+INSERT INTO UserApp (username,password,email,rol) VALUES ('Usuario4','usu4abc','usuario4abc@gmail.com','official'); 
+
+
+INSERT INTO UserApp (username,password,email,rol) VALUES ('Usuario5','usu5abc','usuario5abc@gmail.com','owner'); 
+
+
+INSERT INTO UserApp (username,password,email,rol) VALUES ('Usuario6','usu6abc','usuario6abc@gmail.com','vet');
+
+
+INSERT INTO UserApp (username,password,email,rol) VALUES ('Usuario7','usu7abc','usuario7abc@gmail.com','owner');
+
+
+INSERT INTO UserApp (username,password,email,rol) VALUES ('Usuario8','usu8abc','usuario8abc@gmail.com','official');
+
+
+INSERT INTO UserApp (username,password,email,rol) VALUES ('Usuario9','usu9abc','usuario9abc@gmail.com','vet');
+
+ 
+
+INSERT INTO official (username,name) VALUES ('Usuario2','Juan'); 
+
+
+INSERT INTO official (username,name) VALUES ('Usuario4','Alberto'); 
+
+
+INSERT INTO official (username,name) VALUES ('Usuario8','Jhon');
+
+
+INSERT INTO owner (username,person_id,name,address,neighborhood) VALUES ('Usuario1','111111','Carlos','direccion1','vecindario1'); 
+
+
+INSERT INTO owner (username,person_id,name,address,neighborhood) VALUES ('Usuario5','111555','Pedro','direccion5','vecindario5');
+
+
+INSERT INTO owner (username,person_id,name,address,neighborhood) VALUES ('Usuario7','111777','Lucas','direccion7','vecindario7');
+
+
+INSERT INTO vet (username,name,address,neighborhood) VALUES ('Usuario3','Veterinaria3','direccion3','vecindario3'); 
+
+
+INSERT INTO vet (username,name,address,neighborhood) VALUES ('Usuario6','veterinaria6','direccion6','vecindario6'); 
+
+
+INSERT INTO vet (username,name,address,neighborhood) VALUES ('Usuario9','veterinaria9','direccion9','vecindario9');
+
+
+INSERT INTO pet(pet_id,microchip,name,species,race,size,sex,picture,owner_id) VALUES ('1','petA1','Max','Especie1','pastor aleman','Pequeño','M','imagen1.jpg','Usuario1'); 
+
+
+INSERT INTO pet(pet_id,microchip,name,species,race,size,sex,picture,owner_id) VALUES ('2','petA2','Firulais','Especie2','poodle toy','Mediano','H','imagen2.jpg','Usuario5'); 
+
+
+INSERT INTO pet(pet_id,microchip,name,species,race,size,sex,picture,owner_id) VALUES ('3','petA3','David','Especie3','pastor de Brie,','Grande','M','imagen3.jpg','Usuario7');
+
+
+INSERT INTO visit(visit_id,created_at,type,description,vet_id,pet_id) VALUES ('consulta1','2021-14-21 07:14:57','Instalación microchip','Se implantó el microchip','Usuario3','1'); 
+
+
+INSERT INTO visit(visit_id,created_at,type,description,vet_id,pet_id) VALUES ('consulta2','2021-14-21 07:14:57','Esterilización','Se esterilizó la mascota','Usuario6','2');
+
+
+INSERT INTO visit(visit_id,created_at,type,description,vet_id,pet_id) VALUES ('consulta3','2021-14-21 07:14:57','Vacunación','Se vacunó la mascota','Usuario9','3');
+
+
+INSERT INTO visit(visit_id,created_at,type,description,vet_id,pet_id) VALUES ('consulta4','2021-14-21 07:14:57','Desparacitación','Se desparacitó la mascota','Usuario3','1');
+
+
+INSERT INTO visit(visit_id,created_at,type,description,vet_id,pet_id) VALUES ('consulta5','2021-14-21 07:14:57','Urgencia','Se atendio de urgencias la mascota','Usuario6','2');
+
+
+
+
+
+
+
+
+
+
+
+
